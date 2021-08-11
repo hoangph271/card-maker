@@ -1,3 +1,3 @@
 import { FC } from 'react'
 
-export type StyledFC<T = { className?: string }> = FC<T>
+export type StyledFC<T = {}> = FC<T & { className?: string }>
