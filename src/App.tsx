@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components'
+import type { StyledFC } from './types'
 
-function App() {
+const App: StyledFC = (props) => {
+  const { className } = props
+
   return (
-    <div className="App">
+    <div className={className} data-testid="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {'App...!'}
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+const StyledApp = styled(App)`
+  font-family: 'Courier New', Courier, monospace;
+`
+
+export default StyledApp
