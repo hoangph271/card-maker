@@ -1,14 +1,28 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import styled from 'styled-components'
 import { NonStopWatch } from './components/NonStopWatch'
 import type { StyledFC } from './types'
+
+const PortfolioSummary: StyledFC = () => {
+  return (
+    <div>
+      {'PortfolioSummary'}
+    </div>
+  )
+}
 
 const App: StyledFC = (props) => {
   const { className } = props
 
   return (
-    <div className={className} data-testid="App">
-      <NonStopWatch />
-    </div>
+    <Router>
+      <div className={className} data-testid="App">
+        <Routes>
+          <Route path="/" element={<PortfolioSummary />} />
+          <Route path="*" element={<NonStopWatch />} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 
