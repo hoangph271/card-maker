@@ -14646,6 +14646,11 @@ yargs@^16.2.0:
     y18n "^5.0.5"
     yargs-parser "^20.2.2"
 
+ygo-card@*:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/ygo-card/-/ygo-card-1.4.0.tgz#d2041dd6236c0d91947613d9cef56431dbbfb561"
+  integrity sha512-Ok7z/G/ER9uv9Mx5f8aFjg7cnjcfg3TvY0vORyDAhcl5yhvdziH5pok5JkzBBmdbx0HFViFfHGtI3U/gRtNxhA==
+
 yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"

@@ -1,0 +1,71 @@
+.arrowbox {
+  list-style: none;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  display: grid !important;
+  width: 140px;
+  height: 140px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.arrowbox li {
+  display: block;
+  border-radius: 4px;
+  border: solid 5px #eee;
+  transition: all 0.2s;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.arrowbox li:hover {
+  border: solid 5px #ddd;
+}
+
+.arrowbox .on {
+  background-color: #fc7848;
+}
+
+.arrowbox .off {
+  background-color: #ddd;
+}
+
+.arrowbox .blank {
+  background: none;
+  border-radius: 50%;
+  cursor: default;
+}
+
+.attribute-box {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 8px;
+  color: 'red';
+  background-color: #f7f7f7;
+}
+
+.attribute-box li {
+  width: 32px;
+  height: 25px;
+  line-height: 32px;
+  margin-right: 8px;
+  text-align: center;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+.attribute-box li:last-child {
+  margin-right: 0;
+}
+
+.attribute-box .select {
+  opacity: 1;
+}
+
+.attribute-box .unselect {
+  opacity: 0.3;
+}
